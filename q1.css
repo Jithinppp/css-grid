@@ -1,0 +1,30 @@
+.grid--container {
+  display: grid;
+  grid-template-rows: 100px 200px 400px 100px;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 2fr) 1fr;
+}
+.small,
+.header,
+.footer {
+  text-align: center;
+  background-color: red;
+  color: aliceblue;
+  font-size: 2rem;
+}
+
+.header {
+  grid-row: 1/2;
+  grid-column: 1/-1;
+}
+.box4 {
+  grid-row: 3/4;
+  grid-column: 1/4;
+}
+.footer {
+  grid-column: 1/-1;
+  grid-row: 4/-1;
+}
+.box5 {
+  grid-row: 2/4;
+}
